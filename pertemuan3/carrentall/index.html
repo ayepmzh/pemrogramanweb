@@ -1,93 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Car Rental</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Car Rental</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div id="search">
-        <div class="title">
-            <h1>Car Rental</h1>
-            <p>Find the perfect car for your next adventure</p>
-            <hr>
-        </div>
-        <div class="form-container">
-            <div class="form-group">
-                <label for="pickup">Rental Location:</label>
-                <select id="pickup" name="pickup">
-                    <option value="">Select Location</option>
-                    <option value="location1">Yogyakarta</option>
-                    <option value="location2">Bali</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="pickup-date">Rental Start Date:</label>
-                <input type="date" id="pickup-date" name="pickup-date">
-            </div>
-            <div class="form-group">
-                <label for="return-date">Rental End Date:</label>
-                <input type="date" id="return-date" name="return-date">
-            </div>
-            <button type="submit">Search</button>
-        </div>
+
+<nav>
+  <div class="nav-logo">Car<span>Rental</span></div>
+  <ul class="nav-links">
+    <li><a href="#fleet">Armada</a></li>
+    <li><a href="#why">Keunggulan</a></li>
+    <li><a href="#how">Cara Pesan</a></li>
+    <li><a href="#reviews">Ulasan</a></li>
+  </ul>
+  <button class="nav-cta" onclick="document.getElementById('fleet').scrollIntoView({behavior:'smooth'})">Sewa Sekarang</button>
+</nav>
+
+<section id="hero">
+  <div class="hero-content">
+    <div class="hero-badge">⭐ Trusted Car Rental Partner</div>
+    <h1 class="hero-title">
+      Perjalanan <em>Mewah</em><br>Dimulai di Sini
+    </h1>
+    <p class="hero-sub">Armada premium siap jemput, harga transparan, dan layanan 24 jam — untuk setiap petualangan Anda.</p>
+  </div>
+
+  <div class="search-box">
+    <div class="field">
+      <label for="loc">Lokasi Pengambilan</label>
+      <select id="loc">
+        <option value="">Pilih Kota</option>
+        <option>Yogyakarta</option>
+        <option>Bali</option>
+        <option>Jakarta</option>
+        <option>Surabaya</option>
+        <option>Bandung</option>
+      </select>
     </div>
-
-    <div class="car-list">
-    <h2>Car List</h2>
-
-    <div class="car-item">
-        <img src="download (4).webp" alt="Toyota Avanza">
-        <h3>Toyota Avanza</h3>
-        <p>MPV • 7 Seat • Manual • Rp 350.000/day</p>
+    <div class="field">
+      <label for="dt1">Tanggal Mulai</label>
+      <input type="date" id="dt1"/>
     </div>
-
-    <div class="car-item">
-        <img src="download (3).webp" alt="Honda Brio">
-        <h3>Honda Brio</h3>
-        <p>City Car • 5 Seat • Automatic • Rp 300.000/day</p>
+    <div class="field">
+      <label for="dt2">Tanggal Kembali</label>
+      <input type="date" id="dt2"/>
     </div>
-
-    <div class="car-item">
-        <img src="OIP.webp" alt="Toyota Fortuner">
-        <h3>Toyota Fortuner</h3>
-        <p>SUV • 7 Seat • Automatic • Rp 700.000/day</p>
+    <div class="field">
+      <label for="type">Tipe Kendaraan</label>
+      <select id="type">
+        <option value="">Semua Tipe</option>
+        <option>MPV</option>
+        <option>SUV</option>
+        <option>City Car</option>
+        <option>Sedan</option>
+        <option>Sport</option>
+      </select>
     </div>
+    <button class="search-btn" onclick="searchCars()">🔍 Cari Mobil</button>
+  </div>
+</section>
 
-    <div class="car-item">
-        <img src="download (5).webp" alt="Mitsubishi Pajero">
-        <h3>Mitsubishi Pajero</h3>
-        <p>SUV • 7 Seat • Automatic • Rp 750.000/day</p>
-    </div>
 
-    <div class="car-item">
-        <img src="download (2).webp" alt="Daihatsu Xenia">
-        <h3>Daihatsu Xenia</h3>
-        <p>MPV • 7 Seat • Manual • Rp 320.000/day</p>
-    </div>
-
-    <div class="car-item">
-        <img src="download (1).webp" alt="LAMBO">
-        <h3>Lamborgini</h3>
-        <p>MPV • 7 Seat • Matic • Rp 1120.000/day</p>
-    </div>
-
-    <div class="car-item">
-        <img src="download.webp" alt="BYD">
-        <h3>BYD</h3>
-        <p>MPV • 7 Seat • Manual • Rp 320.000/day</p>
-    </div>
-
-    <div class="car-item">
-        <img src="OIP (1).jpeg" alt="VIOS">
-        <h3>VIOS</h3>
-        <p>MPV • 7 Seat • Manual • Rp 320.000/day</p>
-    </div>
-
+<div class="stats-bar">
+  <div class="stat"><div class="stat-num">1,200+</div><div class="stat-label">Kendaraan Tersedia</div></div>
+  <div class="stat"><div class="stat-num">98%</div><div class="stat-label">Kepuasan Pelanggan</div></div>
+  <div class="stat"><div class="stat-num">15+</div><div class="stat-label">Kota Terjangkau</div></div>
+  <div class="stat"><div class="stat-num">24/7</div><div class="stat-label">Dukungan Pelanggan</div></div>
 </div>
-</body>
 
+<section id="fleet">
+  <div class="section-header">
+    <div class="section-tag">Armada Kami</div>
+    <h2 class="section-title">Pilih <em>Kendaraan</em> Impianmu</h2>
+  </div>
+  <div class="car-grid" id="carGrid"></div>
+</section>
+
+<section id="why">
+  <div class="why-inner">
+    <div class="section-header">
+      <div class="section-tag">Kenapa Pilih Car Rental</div>
+      <h2 class="section-title">Standar <em>Premium</em>, Harga Terjangkau</h2>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feat-icon">🛡️</div>
+        <div class="feat-title">Asuransi Lengkap</div>
+        <div class="feat-desc">Setiap sewa sudah termasuk perlindungan asuransi komprehensif tanpa biaya tersembunyi.</div>
+      </div>
+      <div class="feature-card">
+        <div class="feat-icon">🚗</div>
+        <div class="feat-title">Kendaraan Terawat</div>
+        <div class="feat-desc">Semua armada melewati inspeksi 50 poin sebelum diserahkan ke pelanggan.</div>
+      </div>
+      <div class="feature-card">
+        <div class="feat-icon">📍</div>
+        <div class="feat-title">Antar Jemput</div>
+        <div class="feat-desc">Layanan antar jemput ke lokasi pilihan Anda — bandara, hotel, atau rumah.</div>
+      </div>
+      <div class="feature-card">
+        <div class="feat-icon">💳</div>
+        <div class="feat-title">Pembayaran Fleksibel</div>
+        <div class="feat-desc">Transfer bank, kartu kredit, e-wallet, hingga bayar di tempat tersedia.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="script.js"></script>
+
+</body>
 </html>
