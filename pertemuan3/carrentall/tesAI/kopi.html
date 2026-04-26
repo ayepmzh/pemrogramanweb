@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kopi Jawa — Specialty Coffee Indonesia</title>
+  <link rel="stylesheet" href="kopi.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-logo">
+      <span class="logo-icon">☕</span>
+      <span class="logo-text">Kopi Jawa</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#jenis">Jenis Kopi</a></li>
+      <li><a href="#tentang">Tentang</a></li>
+      <li><a href="#kontak">Kontak</a></li>
+    </ul>
+    <a href="#pesan" class="nav-cta">Pesan Sekarang</a>
+  </nav>
+
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Specialty Coffee Indonesia</p>
+      <h1 class="hero-title">Setiap Tegukan<br><em>Bercerita</em></h1>
+      <p class="hero-desc">Biji kopi pilihan dari dataran tinggi Nusantara, disangrai dengan presisi, diseduh dengan cinta — untuk pengalaman kopi yang tak terlupakan.</p>
+      <div class="hero-actions">
+        <a href="#menu" class="btn-primary">Lihat Menu</a>
+        <a href="#jenis" class="btn-outline">Kenali Kopi Kami</a>
+      </div>
+    </div>
+    <div class="hero-badge-float">
+      <div class="badge-ring">
+        <span>SINGLE ORIGIN · SPECIALTY GRADE · FRESH ROAST</span>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <div class="stats-strip">
+    <div class="stat-item">
+      <span class="stat-num">12+</span>
+      <span class="stat-label">Origin Kopi</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <span class="stat-num">5.000+</span>
+      <span class="stat-label">Pelanggan Puas</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <span class="stat-num">8 Thn</span>
+      <span class="stat-label">Pengalaman Roasting</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <span class="stat-num">100%</span>
+      <span class="stat-label">Arabika Pilihan</span>
+    </div>
+  </div>
+
+  <section class="section menu-section" id="menu">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">— Menu & Harga —</span>
+        <h2 class="section-title">Pilihan Kopi <em>Kami</em></h2>
+        <p class="section-sub">Dari single origin yang murni hingga blended signature — temukan kopi yang berbicara kepada Anda.</p>
+      </div>
+
+      <div class="tab-wrap">
+        <input type="radio" name="tab" id="tab-all"  class="tab-radio" checked/>
+        <input type="radio" name="tab" id="tab-hot"  class="tab-radio"/>
+        <input type="radio" name="tab" id="tab-cold" class="tab-radio"/>
+        <input type="radio" name="tab" id="tab-bean" class="tab-radio"/>
+
+        <div class="tab-labels">
+          <label for="tab-all"  class="tab-label">Semua</label>
+          <label for="tab-hot"  class="tab-label">Hot Coffee</label>
+          <label for="tab-cold" class="tab-label">Cold Brew</label>
+          <label for="tab-bean" class="tab-label">Biji Kopi</label>
+        </div>
+
+        <div class="tab-panel panel-all">
+          <div class="menu-grid">
+            <div class="menu-card">
+              <div class="menu-img" style="background-image:url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&q=80')">
+                <span class="menu-tag">Hot</span>
+              </div>
+              <div class="menu-body">
+                <div class="menu-top"><h3>Espresso Classico</h3><span class="menu-price">Rp 28.000</span></div>
+                <p>Shot espresso murni dengan crema tebal. Intens, bold, dan penuh karakter.</p>
+                <div class="menu-meta"><span>☕ 30ml</span><span>⚡ Kuat</span><span>🫘 Arabika</span></div>
+              </div>
+            </div>
+            <div class="menu-card">
+              <div class="menu-img" style="background-image:url('https://images.unsplash.com/photo-1534778101976-62847782c213?w=600&q=80')">
+                <span class="menu-tag">Hot</span>
+              </div>
+              <div class="menu-body">
+                <div class="menu-top"><h3>Cappuccino</h3><span class="menu-price">Rp 38.000</span></div>
+                <p>Espresso dengan steamed milk berbusa tebal. Seimbang antara kopi dan susu.</p>
+                <div class="menu-meta"><span>☕ 180ml</span><span>⚡ Sedang</span><span>🥛 Milk</span></div>
+              </div>
+            </div>
+            <div class="menu-card">
+              <div class="menu-img" style="background-image:url('https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600&q=80')">
+                <span class="menu-tag">Hot</span><span class="menu-tag tag-best">Best Seller</span>
+              </div>
+              <div class="menu-body">
+                <div class="menu-top"><h3>Latte Signature</h3><span class="menu-price">Rp 42.000</span></div>
+                <p>Espresso double shot dengan susu creamy dan latte art khas Kōhi. Favorit pelanggan.</p>
+                <div class="menu-meta"><span>☕ 250ml</span><span>⚡ Ringan</span><span>🎨 Art</span></div>
+              </div>
+            </div>
+            <div class="menu-card">
+              <div class="menu-img" style="background-image:url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80')">
+                <span class="menu-tag">Hot</span>
+              </div>
+              <div class="menu-body">
+                <div class="menu-top"><h3>Pour Over V60</h3><span class="menu-price">Rp 45.000</span></div>
+                <p>Metode manual pour-over dengan biji single origin pilihan. Clean, bright, dan aromatic.</p>
+                <div class="menu-meta"><span>☕ 300ml</span><span>⚡ Medium</span><span>🌿 Fruity</span></div>
+              </div>
+            </div>
+            <div class="menu-card">
+              <div class="menu-img" style="background-image:url('https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=600&q=80')">
+                <span class="menu-tag">Hot</span>
+              </div>
+              <div class="menu-body">
+                <div class="menu-top"><h3>Flat White</h3><span class="menu-price">Rp 40.000</span></div>
+                <p>Dua shot ristretto dengan microfoam susu yang lembut. Lebih intense dari latte.</p>
+                <div class="menu-meta"><span>☕ 160ml</span><span>⚡ Kuat</span><span>🥛 Velvet</span></div>
+              </div>
+            </div>
+            <div class="menu-card">
+              <div class="menu-img" style="background-image:url('https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=600&q=80')">
+                <span class="menu-tag">Hot</span>
+              </div>
+              <div class="menu-body">
+                <div class="menu-top"><h3>Americano</h3><span class="menu-price">Rp 32.000</span></div>
+                <p>Espresso dilengkapi air panas. Rasa kopi yang bersih dan panjang di tenggorokan.</p>
+                <div class="menu-meta"><span>☕ 240ml</span><span>⚡ Sedang</span><span>💧 Clean</span></div>
+              </div>
+            </div>
+            <div class="menu-card">
+              <div class="menu-img" style="background-image:url('https://images.unsplash.com/photo-1557006021-b85faa2bc5e2?w=600&q=80')">
+                <span class="menu-tag tag-cold">Cold</span><span class="menu-tag tag-best">New</span>
+              </div>
+              <div class="menu-body">
+                <div class="menu-top"><h3>Cold Brew Classic</h3><span class="menu-price">Rp 45.000</span></div>
+                <p>Diseduh dingin selama 18 jam. Smooth, low-acid, dan naturally sweet.</p>
+                <div class="menu-meta"><span>🧊 350ml</span><span>⚡ Medium</span><span>🍫 Chocolaty</span></div>
+              </div>
+            </div>
+            <div class="menu-card">
+              <div class="menu-img" style="background-image:url('https://images.unsplash.com/photo-1544145945-f90425340c7e?w=600&q=80')">
+                <span class="menu-tag tag-cold">Cold</span>
+              </div>
+              <div class="menu-body">
+                <div class="menu-top"><h3>Iced Caramel Latte</h3><span class="menu-price">Rp 48.000</span></div>
+                <p>Espresso, susu segar, es batu, dan salted caramel homemade. Manis yang seimbang.</p>
+                <div class="menu-meta"><span>🧊 400ml</span><span>⚡ Ringan</span><span>🍬 Manis</span></div>
+              </div>
+            </div>
+            <div class="menu-card">
+              <div class="menu-img" style="background-image:url('https://images.unsplash.com/photo-1593350126803-0816acb3b7ae?w=600&q=80')">
+                <span class="menu-tag tag-cold">Cold</span><span class="menu-tag tag-best">Best Seller</span>
+              </div>
+              <div class="menu-body">
+                <div class="menu-top"><h3>Dirty Matcha</h3><span class="menu-price">Rp 52.000</span></div>
+                <p>Shot espresso di atas matcha latte dingin. Kontras rasa yang menggoda selera.</p>
+                <div class="menu-meta"><span>🧊 380ml</span><span>⚡ Medium</span><span>🍵 Matcha</span></div>
+              </div>
+            </div>
+            <div class="menu-card">
+              <div class="menu-img" style="background-image:url('https://images.unsplash.com/photo-1550583724-b2692b85b150?w=600&q=80')">
+                <span class="menu-tag tag-cold">Cold</span>
+              </div>
+              <div class="menu-body">
+                <div class="menu-top"><h3>Nitro Cold Brew</h3><span class="menu-price">Rp 55.000</span></div>
+                <p>Cold brew diinfus nitrogen. Tekstur creamy seperti stout, tanpa susu sama sekali.</p>
+                <div class="menu-meta"><span>🧊 300ml</span><span>⚡ Kuat</span><span>🫧 Creamy</span></div>
+              </div>
+            </div>
+            <div class="menu-card">
+              <div class="menu-img" style="background-image:url('https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=600&q=80')">
+                <span class="menu-tag tag-bean">Biji</span>
+              </div>
+              <div class="menu-body">
+                <div class="menu-top"><h3>Gayo Arabika</h3><span class="menu-price">Rp 85.000 / 200g</span></div>
+                <p>Kopi Gayo Aceh. Flavor notes: dark chocolate, brown sugar, cedar. Medium roast.</p>
+                <div class="menu-meta"><span>🌍 Aceh</span><span>🔥 Medium</span><span>★ 87 pts</span></div>
+              </div>
+            </div>
+            <div class="menu-card">
+              <div class="menu-img" style="background-image:url('https://images.unsplash.com/photo-1611854779393-1b2da9d400fe?w=600&q=80')">
+                <span class="menu-tag tag-bean">Biji</span><span class="menu-tag tag-best">Premium</span>
+              </div>
+              <div class="menu-body">
+                <div class="menu-top"><h3>Toraja Kalosi</h3><span class="menu-price">Rp 110.000 / 200g</span></div>
+                <p>Kopi legendaris Sulawesi. Flavor notes: dark fruit, tamarind, dark chocolate.</p>
+                <div class="menu-meta"><span>🌍 Sulawesi</span><span>🔥 Medium-Dark</span><span>★ 89 pts</span></div>
+              </div>
+            </div>
+            <div class="menu-card">
+              <div class="menu-img" style="background-image:url('https://images.unsplash.com/photo-1587080413959-06b859fb107d?w=600&q=80')">
+                <span class="menu-tag tag-bean">Biji</span>
+              </div>
+              <div class="menu-body">
+                <div class="menu-top"><h3>Flores Bajawa</h3><span class="menu-price">Rp 95.000 / 200g</span></div>
+                <p>Single origin Flores. Flavor notes: honey, jasmine, bergamot. Light-medium roast.</p>
+                <div class="menu-meta"><span>🌍 Flores</span><span>🔥 Light</span><span>★ 88 pts</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-panel panel-hot">
+          <div class="menu-grid">
+            <div class="menu-card"><div class="menu-img" style="background-image:url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&q=80')"><span class="menu-tag">Hot</span></div><div class="menu-body"><div class="menu-top"><h3>Espresso Classico</h3><span class="menu-price">Rp 28.000</span></div><p>Shot espresso murni dengan crema tebal. Intens, bold, dan penuh karakter.</p><div class="menu-meta"><span>☕ 30ml</span><span>⚡ Kuat</span><span>🫘 Arabika</span></div></div></div>
+            <div class="menu-card"><div class="menu-img" style="background-image:url('https://images.unsplash.com/photo-1534778101976-62847782c213?w=600&q=80')"><span class="menu-tag">Hot</span></div><div class="menu-body"><div class="menu-top"><h3>Cappuccino</h3><span class="menu-price">Rp 38.000</span></div><p>Espresso dengan steamed milk berbusa tebal. Seimbang antara kopi dan susu.</p><div class="menu-meta"><span>☕ 180ml</span><span>⚡ Sedang</span><span>🥛 Milk</span></div></div></div>
+            <div class="menu-card"><div class="menu-img" style="background-image:url('https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600&q=80')"><span class="menu-tag">Hot</span><span class="menu-tag tag-best">Best Seller</span></div><div class="menu-body"><div class="menu-top"><h3>Latte Signature</h3><span class="menu-price">Rp 42.000</span></div><p>Espresso double shot dengan susu creamy dan latte art khas Kōhi.</p><div class="menu-meta"><span>☕ 250ml</span><span>⚡ Ringan</span><span>🎨 Art</span></div></div></div>
+            <div class="menu-card"><div class="menu-img" style="background-image:url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80')"><span class="menu-tag">Hot</span></div><div class="menu-body"><div class="menu-top"><h3>Pour Over V60</h3><span class="menu-price">Rp 45.000</span></div><p>Metode manual pour-over dengan biji single origin pilihan. Clean, bright, dan aromatic.</p><div class="menu-meta"><span>☕ 300ml</span><span>⚡ Medium</span><span>🌿 Fruity</span></div></div></div>
+            <div class="menu-card"><div class="menu-img" style="background-image:url('https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=600&q=80')"><span class="menu-tag">Hot</span></div><div class="menu-body"><div class="menu-top"><h3>Flat White</h3><span class="menu-price">Rp 40.000</span></div><p>Dua shot ristretto dengan microfoam susu yang lembut. Lebih intense dari latte.</p><div class="menu-meta"><span>☕ 160ml</span><span>⚡ Kuat</span><span>🥛 Velvet</span></div></div></div>
+            <div class="menu-card"><div class="menu-img" style="background-image:url('https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=600&q=80')"><span class="menu-tag">Hot</span></div><div class="menu-body"><div class="menu-top"><h3>Americano</h3><span class="menu-price">Rp 32.000</span></div><p>Espresso dilengkapi air panas. Rasa kopi yang bersih dan panjang di tenggorokan.</p><div class="menu-meta"><span>☕ 240ml</span><span>⚡ Sedang</span><span>💧 Clean</span></div></div></div>
+          </div>
+        </div>
+
+        <div class="tab-panel panel-cold">
+          <div class="menu-grid">
+            <div class="menu-card"><div class="menu-img" style="background-image:url('https://images.unsplash.com/photo-1557006021-b85faa2bc5e2?w=600&q=80')"><span class="menu-tag tag-cold">Cold</span><span class="menu-tag tag-best">New</span></div><div class="menu-body"><div class="menu-top"><h3>Cold Brew Classic</h3><span class="menu-price">Rp 45.000</span></div><p>Diseduh dingin selama 18 jam. Smooth, low-acid, dan naturally sweet.</p><div class="menu-meta"><span>🧊 350ml</span><span>⚡ Medium</span><span>🍫 Chocolaty</span></div></div></div>
+            <div class="menu-card"><div class="menu-img" style="background-image:url('https://images.unsplash.com/photo-1544145945-f90425340c7e?w=600&q=80')"><span class="menu-tag tag-cold">Cold</span></div><div class="menu-body"><div class="menu-top"><h3>Iced Caramel Latte</h3><span class="menu-price">Rp 48.000</span></div><p>Espresso, susu segar, es batu, dan salted caramel homemade. Manis yang seimbang.</p><div class="menu-meta"><span>🧊 400ml</span><span>⚡ Ringan</span><span>🍬 Manis</span></div></div></div>
+            <div class="menu-card"><div class="menu-img" style="background-image:url('https://images.unsplash.com/photo-1593350126803-0816acb3b7ae?w=600&q=80')"><span class="menu-tag tag-cold">Cold</span><span class="menu-tag tag-best">Best Seller</span></div><div class="menu-body"><div class="menu-top"><h3>Dirty Matcha</h3><span class="menu-price">Rp 52.000</span></div><p>Shot espresso di atas matcha latte dingin. Kontras rasa yang menggoda selera.</p><div class="menu-meta"><span>🧊 380ml</span><span>⚡ Medium</span><span>🍵 Matcha</span></div></div></div>
+            <div class="menu-card"><div class="menu-img" style="background-image:url('https://images.unsplash.com/photo-1550583724-b2692b85b150?w=600&q=80')"><span class="menu-tag tag-cold">Cold</span></div><div class="menu-body"><div class="menu-top"><h3>Nitro Cold Brew</h3><span class="menu-price">Rp 55.000</span></div><p>Cold brew diinfus nitrogen. Tekstur creamy seperti stout, tanpa susu sama sekali.</p><div class="menu-meta"><span>🧊 300ml</span><span>⚡ Kuat</span><span>🫧 Creamy</span></div></div></div>
+          </div>
+        </div>
+
+        <div class="tab-panel panel-bean">
+          <div class="menu-grid">
+            <div class="menu-card"><div class="menu-img" style="background-image:url('https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=600&q=80')"><span class="menu-tag tag-bean">Biji</span></div><div class="menu-body"><div class="menu-top"><h3>Gayo Arabika</h3><span class="menu-price">Rp 85.000 / 200g</span></div><p>Kopi Gayo Aceh. Flavor notes: dark chocolate, brown sugar, cedar. Medium roast.</p><div class="menu-meta"><span>🌍 Aceh</span><span>🔥 Medium</span><span>★ 87 pts</span></div></div></div>
+            <div class="menu-card"><div class="menu-img" style="background-image:url('https://images.unsplash.com/photo-1611854779393-1b2da9d400fe?w=600&q=80')"><span class="menu-tag tag-bean">Biji</span><span class="menu-tag tag-best">Premium</span></div><div class="menu-body"><div class="menu-top"><h3>Toraja Kalosi</h3><span class="menu-price">Rp 110.000 / 200g</span></div><p>Kopi legendaris Sulawesi. Flavor notes: dark fruit, tamarind, dark chocolate.</p><div class="menu-meta"><span>🌍 Sulawesi</span><span>🔥 Medium-Dark</span><span>★ 89 pts</span></div></div></div>
+            <div class="menu-card"><div class="menu-img" style="background-image:url('https://images.unsplash.com/photo-1587080413959-06b859fb107d?w=600&q=80')"><span class="menu-tag tag-bean">Biji</span></div><div class="menu-body"><div class="menu-top"><h3>Flores Bajawa</h3><span class="menu-price">Rp 95.000 / 200g</span></div><p>Single origin Flores. Flavor notes: honey, jasmine, bergamot. Light-medium roast.</p><div class="menu-meta"><span>🌍 Flores</span><span>🔥 Light</span><span>★ 88 pts</span></div></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section jenis-section" id="jenis">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">— Kenali Kopi —</span>
+        <h2 class="section-title">Jenis <em>Kopi</em> Dunia</h2>
+        <p class="section-sub">Pahami perbedaan setiap jenis kopi sebelum memilih favoritmu.</p>
+      </div>
+      <div class="jenis-grid">
+        <div class="jenis-card jenis-featured">
+          <div class="jenis-icon">🫘</div>
+          <h3>Arabika</h3>
+          <span class="jenis-origin">Coffea arabica</span>
+          <p>Jenis kopi paling populer di dunia (60% produksi global). Tumbuh di dataran tinggi 600–2.000 mdpl. Rasa lebih kompleks, asam ringan, dan aromatik. Kandungan kafein lebih rendah dibanding robusta.</p>
+          <div class="jenis-tags"><span>Asam Ringan</span><span>Aromatik</span><span>Kompleks</span><span>Fruity</span></div>
+          <div class="jenis-price-range"><span class="label">Range Harga Biji</span><span class="range">Rp 80.000 – 200.000 / 200g</span></div>
+        </div>
+        <div class="jenis-card">
+          <div class="jenis-icon">⚡</div>
+          <h3>Robusta</h3>
+          <span class="jenis-origin">Coffea canephora</span>
+          <p>Lebih kuat, pahit, dan berkafein tinggi. Tumbuh di dataran rendah. Banyak digunakan untuk espresso blend karena menghasilkan crema yang tebal dan rasa yang bold dan penuh.</p>
+          <div class="jenis-tags"><span>Pahit</span><span>Kuat</span><span>Earthy</span><span>Crema</span></div>
+          <div class="jenis-price-range"><span class="label">Range Harga Biji</span><span class="range">Rp 40.000 – 80.000 / 200g</span></div>
+        </div>
+        <div class="jenis-card">
+          <div class="jenis-icon">🌸</div>
+          <h3>Liberika</h3>
+          <span class="jenis-origin">Coffea liberica</span>
+          <p>Kopi langka dengan biji besar dan aroma unik. Tumbuh di wilayah tropis rendah. Rasa smoky dengan sentuhan floral dan fruity. Populer di Malaysia dan Filipina sebagai warisan budaya.</p>
+          <div class="jenis-tags"><span>Smoky</span><span>Floral</span><span>Langka</span><span>Unik</span></div>
+          <div class="jenis-price-range"><span class="label">Range Harga Biji</span><span class="range">Rp 120.000 – 250.000 / 200g</span></div>
+        </div>
+        <div class="jenis-card">
+          <div class="jenis-icon">✨</div>
+          <h3>Excelsa</h3>
+          <span class="jenis-origin">Coffea excelsa</span>
+          <p>Sub-spesies Liberika yang kini dianggap spesies tersendiri. Rasa tart, fruity, dan dark. Sering digunakan dalam blends untuk menambah kompleksitas dan kedalaman rasa yang unik.</p>
+          <div class="jenis-tags"><span>Tart</span><span>Dark</span><span>Fruity</span><span>Kompleks</span></div>
+          <div class="jenis-price-range"><span class="label">Range Harga Biji</span><span class="range">Rp 100.000 – 180.000 / 200g</span></div>
+        </div>
+      </div>
+
+      <div class="roast-guide">
+        <h3 class="roast-title">Panduan <em>Tingkat Sangrai</em></h3>
+        <div class="roast-levels">
+          <div class="roast-item">
+            <div class="roast-circle roast-light"></div>
+            <span class="roast-name">Light Roast</span>
+            <p class="roast-desc">Warna cokelat muda. Rasa asam tinggi, floral & fruity. Aroma biji kopi lebih dominan.</p>
+          </div>
+          <div class="roast-arrow">→</div>
+          <div class="roast-item">
+            <div class="roast-circle roast-medium"></div>
+            <span class="roast-name">Medium Roast</span>
+            <p class="roast-desc">Keseimbangan sempurna antara asam, manis, dan pahit. Paling populer untuk pour-over.</p>
+          </div>
+          <div class="roast-arrow">→</div>
+          <div class="roast-item">
+            <div class="roast-circle roast-medium-dark"></div>
+            <span class="roast-name">Medium-Dark</span>
+            <p class="roast-desc">Rich, dark chocolate notes. Asam berkurang. Cocok untuk espresso dan cappuccino.</p>
+          </div>
+          <div class="roast-arrow">→</div>
+          <div class="roast-item">
+            <div class="roast-circle roast-dark"></div>
+            <span class="roast-name">Dark Roast</span>
+            <p class="roast-desc">Pahit kuat, smoky, bold. Karakter roasting mendominasi rasa original biji kopi.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="promo-banner">
+    <div class="promo-content">
+      <span class="promo-tag">Penawaran Spesial</span>
+      <h2>Gratis Ongkir<br><em>untuk Pesanan Biji Kopi</em></h2>
+      <p>Minimum pembelian 400g biji kopi. Pengiriman ke seluruh Indonesia.<br>Promo berlaku setiap hari, tidak ada kode kupon!</p>
+      <a href="#pesan" class="btn-primary btn-dark">Pesan Biji Kopi Sekarang</a>
+    </div>
+    <div class="promo-deco">
+      <div class="deco-circle c1"></div>
+      <div class="deco-circle c2"></div>
+      <div class="deco-circle c3"></div>
+    </div>
+  </section>
+
+  <section class="section tentang-section" id="tentang">
+    <div class="container tentang-inner">
+      <div class="tentang-img-wrap">
+        <div class="tentang-img" style="background-image:url('https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=800&q=80')"></div>
+        <div class="tentang-img-overlay"><span class="tentang-year">Est. 2016</span></div>
+      </div>
+      <div class="tentang-text">
+        <span class="section-tag">— Tentang Kami —</span>
+        <h2 class="section-title">Lahir dari <em>Cinta</em><br>kepada Kopi</h2>
+        <p>Kōhi bermula dari garasi kecil di Bandung tahun 2016. Dua orang barista dengan satu impian: menyajikan kopi Indonesia terbaik kepada dunia.</p>
+        <p>Kami percaya bahwa kopi yang baik dimulai dari petani yang baik. Kami bermitra langsung dengan petani di Gayo, Toraja, Flores, dan Bajawa — memastikan harga yang adil dan kualitas yang terjaga.</p>
+        <p>Setiap biji kopi kami sangrai dalam batch kecil untuk memastikan kesegaran optimal. Dari ladang ke cangkir Anda, tidak lebih dari 14 hari.</p>
+        <div class="tentang-values">
+          <div class="value-item"><span class="value-icon">🤝</span><div><strong>Direct Trade</strong><span>Bermitra langsung dengan 23 petani kopi</span></div></div>
+          <div class="value-item"><span class="value-icon">🔬</span><div><strong>Quality Control</strong><span>Cupping & grading setiap batch sebelum dijual</span></div></div>
+          <div class="value-item"><span class="value-icon">🌱</span><div><strong>Sustainability</strong><span>Kemasan ramah lingkungan & program tanam pohon</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section testi-section">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">— Testimoni —</span>
+        <h2 class="section-title">Kata <em>Pelanggan</em> Kami</h2>
+      </div>
+      <div class="testi-grid">
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <p>"Gayo Arabika-nya luar biasa! Aroma saat diseduh sudah membuat hari saya lebih baik. Pengiriman cepat dan kemasannya rapi banget."</p>
+          <div class="testi-author"><div class="testi-avatar">AR</div><div><strong>Andi Rahmat</strong><span>Jakarta · Pelanggan sejak 2020</span></div></div>
+        </div>
+        <div class="testi-card testi-featured">
+          <div class="testi-stars">★★★★★</div>
+          <p>"Sudah coba banyak specialty coffee Indonesia, tapi Toraja Kalosi dari Kōhi ini yang paling memorable. Dark fruit notes-nya benar-benar terasa. Highly recommended!"</p>
+          <div class="testi-author"><div class="testi-avatar">SR</div><div><strong>Sita Rahayu</strong><span>Bandung · Coffee Enthusiast</span></div></div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <p>"Cold Brew Classic-nya sudah jadi ritual pagi saya. Smooth, tidak asam, dan rasa kopinya mantap. Langsung repeat order tiap bulan!"</p>
+          <div class="testi-author"><div class="testi-avatar">BW</div><div><strong>Budi Wijaksono</strong><span>Surabaya · Home Barista</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section pesan-section" id="pesan">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">— Pemesanan —</span>
+        <h2 class="section-title">Pesan <em>Sekarang</em></h2>
+        <p class="section-sub">Isi formulir di bawah dan tim kami akan menghubungi Anda dalam 1×24 jam.</p>
+      </div>
+      <form class="pesan-form" action="#" method="post">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="nama">Nama Lengkap</label>
+            <input type="text" id="nama" name="nama" placeholder="Nama Anda" required/>
+          </div>
+          <div class="form-group">
+            <label for="hp">No. HP / WhatsApp</label>
+            <input type="tel" id="hp" name="hp" placeholder="+62 8xx-xxxx-xxxx" required/>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="email@anda.com"/>
+          </div>
+          <div class="form-group">
+            <label for="produk">Produk yang Diminati</label>
+            <select id="produk" name="produk" required>
+              <option value="" disabled selected>Pilih produk</option>
+              <optgroup label="Hot Coffee">
+                <option>Espresso Classico – Rp 28.000</option>
+                <option>Cappuccino – Rp 38.000</option>
+                <option>Latte Signature – Rp 42.000</option>
+                <option>Pour Over V60 – Rp 45.000</option>
+                <option>Flat White – Rp 40.000</option>
+                <option>Americano – Rp 32.000</option>
+              </optgroup>
+              <optgroup label="Cold Brew">
+                <option>Cold Brew Classic – Rp 45.000</option>
+                <option>Iced Caramel Latte – Rp 48.000</option>
+                <option>Dirty Matcha – Rp 52.000</option>
+                <option>Nitro Cold Brew – Rp 55.000</option>
+              </optgroup>
+              <optgroup label="Biji Kopi">
+                <option>Gayo Arabika – Rp 85.000/200g</option>
+                <option>Toraja Kalosi – Rp 110.000/200g</option>
+                <option>Flores Bajawa – Rp 95.000/200g</option>
+              </optgroup>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="alamat">Alamat Pengiriman</label>
+          <input type="text" id="alamat" name="alamat" placeholder="Jalan, Kota, Kode Pos"/>
+        </div>
+        <div class="form-group">
+          <label for="catatan">Catatan Tambahan</label>
+          <textarea id="catatan" name="catatan" rows="3" placeholder="Grind level, jumlah, atau permintaan khusus..."></textarea>
+        </div>
+        <button type="submit" class="btn-primary btn-submit">☕ Kirim Pesanan</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="kontak-section" id="kontak">
+    <div class="container kontak-inner">
+      <div class="kontak-info">
+        <span class="section-tag">— Hubungi Kami —</span>
+        <h2 class="section-title">Selalu <em>Terbuka</em><br>untuk Anda</h2>
+        <div class="kontak-items">
+          <div class="kontak-item"><span class="kontak-icon">📍</span><div><strong>Alamat</strong><span>Jl. Braga No. 42, Jogja 40111<br>Daerah Istimewa Yogyakarta, Indonesia</span></div></div>
+          <div class="kontak-item"><span class="kontak-icon">📞</span><div><strong>Telepon / WhatsApp</strong><span>+62 812-3456-7890</span></div></div>
+          <div class="kontak-item"><span class="kontak-icon">✉️</span><div><strong>Email</strong><span>hello@KopiJawa.id</span></div></div>
+          <div class="kontak-item"><span class="kontak-icon">🕐</span><div><strong>Jam Buka</strong><span>Senin – Jumat: 07.00 – 21.00<br>Sabtu – Minggu: 08.00 – 22.00</span></div></div>
+        </div>
+        <div class="kontak-socials">
+          <a href="#" class="social-link">📸 Instagram</a>
+          <a href="#" class="social-link">📘 Facebook</a>
+          <a href="#" class="social-link">💬 WhatsApp</a>
+          <a href="#" class="social-link">🛒 Tokopedia</a>
+        </div>
+      </div>
+      <div class="kontak-map">
+        <div class="map-placeholder">
+          <span>🗺️</span>
+          <p>Temukan Kami di Braga, Yogyakarta</p>
+          <a href="https://maps.google.com" target="_blank" class="btn-outline btn-sm">Buka Google Maps</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">☕ Kopi Jawa</div>
+        <p>Specialty coffee dari hati petani Indonesia,<br>untuk cangkir Anda di mana saja.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Menu</h4>
+        <ul><li><a href="#menu">Hot Coffee</a></li><li><a href="#menu">Cold Brew</a></li><li><a href="#menu">Biji Kopi</a></li><li><a href="#menu">Merchandise</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h4>Informasi</h4>
+        <ul><li><a href="#tentang">Tentang Kami</a></li><li><a href="#jenis">Jenis Kopi</a></li><li><a href="#">Blog Kopi</a></li><li><a href="#">Cara Brewing</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h4>Layanan</h4>
+        <ul><li><a href="#pesan">Pesan Online</a></li><li><a href="#">Langganan Bulanan</a></li><li><a href="#">Corporate Order</a></li><li><a href="#kontak">Hubungi Kami</a></li></ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026  Specialty Coffee java. Semua hak dilindungi.</span>
+      <span>Dibuat dengan ☕ dan cinta di Jogja</span>
+    </div>
+  </footer>
+
+</body>
+</html>
